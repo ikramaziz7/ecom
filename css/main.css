@@ -1,0 +1,121 @@
+@font-face {
+    font-family: font1;
+    src: url(../Ruthie/Ruthie-Regular.ttf);
+}
+@font-face {
+    font-family: titles;
+    src: url(../Ruthie/FontsFree-Net-Dream-Avenue.ttf);
+}
+
+main{
+    width: 100%;
+    height: 562px;
+    background-image: url(../assets/ahssanBanner.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    visibility: visible;
+}
+.main-button{
+    position: relative;
+    left: 244px;
+    top: 333px;
+    padding: 14px 47px;
+    border: none;
+    background-color: #a1785a;
+    border-radius: 5PX;
+    color: white;
+    transition: all 0.5s linear;
+}
+.main-button a{
+    color: inherit;
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 18px;
+}
+.main-button:hover{
+    color: #a1785a;
+    background-color: white;
+    border: 1px solid #a1785a;
+}
+.main1{
+    margin-top: 10px;
+}
+.testimonilas{
+    padding: 40px 10px;
+    background-color: rgb(234 217 197);
+    color: #434343;
+    text-align: center;
+margin-top: 20px;
+}
+.testimonila{
+    background-color: #a1785a;
+    padding: 30px;
+}
+
+.inner{
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+.border{
+    width: 160px;
+    height: 5px;
+    background-color: #a1785a;
+  
+    margin: 26px auto;
+
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.col{
+    flex: 33.33%;
+    max-width: 33.33%;
+    box-sizing: border-box;
+    padding: 15px;
+}
+.testimonila img{
+width: 100px;
+height: 100px;
+border-radius: 50%;
+}
+.name{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 20px 0;
+    font-family: titles;
+}
+.stars{
+    color: #f9dd63;
+    margin-bottom: 20px;
+}
+.icons-conta{
+    background: #eee;
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 5rem; padding-bottom: 5rem;
+}
+.icons-conta.icons{ 
+    background: #fff;
+    border: 1rem solid Orgba(0,0,0, .1) ;
+    padding:2rem;
+    display: flex;
+    align-items: center;
+    flex: 1 1 25rem;
+    }
+    .icons-conta .icons img{
+        height: 5rem;
+        margin-right: 2rem;
+        }
+        .icons-conta .icons h3{
+        color: D#333;
+        padding-bottom: .5rem;
+        font-size: 1.5rem;
+        }
+        .icons-conta.icons span{
+        color: D#555;
+        font-size: 1.3rem;}

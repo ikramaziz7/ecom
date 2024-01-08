@@ -1,0 +1,161 @@
+@font-face {
+    font-family: titles;
+    src: url(../Ruthie/FontsFree-Net-Dream-Avenue.ttf);
+}
+@font-face {
+    font-family: texts;
+    src: url(../Ruthie/AnticSlab-Regular.ttf);
+}
+.collections{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0px;            
+    visibility: visible;
+}
+.collections img{
+    width: 559PX;
+    display: block;
+    transition: all 0.4s linear;
+}
+.middle {
+    display: flex;
+    justify-content: center;
+    transition: .5s ease;
+    opacity: 0;
+    position: relative;
+    width: 559px;
+    top: -287px;
+    transition: all 0.4s linear;
+  }
+.middle button{
+    border: none;
+    background-color: #a1785a;
+    padding: 15px 25px;
+    color:white;
+    border-radius: 15px;
+
+}
+.middle button a{
+ font-weight: bold;
+ color: inherit;
+ text-decoration: none;
+}
+.collections div:hover img{
+    opacity: 0.5;
+}
+.collections div:hover .middle{
+    opacity: 1;
+}
+.aboutus {
+    display: flex;
+}
+.aboutusP{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(232 216 194);
+    justify-content: space-evenly;
+
+}
+.aboutusP h1{
+    font-family: font1;
+    padding-top: 15px;
+    font-size:50px;
+    font-weight: bold;
+}
+.aboutusP p{
+   display: flex;
+    width: 70%;
+    font-size: 30px;
+    text-align: center;
+}
+div.gallery {
+    border: 1px solid #ccc;
+    
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 100%;
+    
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 100%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+.desc h3{
+    font-weight: bold;
+    font-family: titles;
+}  
+.bestseller h1{
+    background-color: #a1795b;
+    display: flex;
+    justify-content: center;
+    font-family: titles;
+    font-size: 50px; 
+    font-weight: bold;
+}
+.bestseller{
+    margin-top: 10px;
+    margin-bottom:10px ;
+}
+.bestsellercontainer{
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1FR 1fr 1fr;
+  row-gap: 15px;
+}
+
+.collec{
+    font-family: titles;
+    position: relative;
+    top: 90px;
+    left: 1px;
+    padding: 14px 140px;
+    text-align: center;
+
+  
+}
+
+.collec h3{
+    background-color: #a1785a;
+    border: #a1785a;
+    border-radius: 90px;
+    color: white;
+}
+p{
+    font-family: texts;
+}
+desc{
+    font-family: texts; 
+    
+}

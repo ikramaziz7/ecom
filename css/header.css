@@ -1,0 +1,93 @@
+@font-face {
+    font-family: font1;
+    src: url(../Ruthie/Ruthie-Regular.ttf);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+}
+header{
+    height: 80px;
+    width: 100%;
+    background-color: rgb(116 84 62);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0%;
+    padding: 20px 100px;
+    z-index: 99;
+    visibility: visible;
+}
+.navPlusInput{
+    flex: 4;
+    display: flex;
+    justify-content: space-around;
+}
+.header-title{
+    flex: 1;
+    margin-right: 100px;
+    font-family: font1;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.navbar-items{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    font-weight: normal;
+    font-size: 20px;
+    transition: all 0.5S linear;
+    
+}
+.navbar-items:hover{
+color: rgb(71, 54, 42);
+transform: translateY(15px);
+}
+
+.search-div input{
+    border: none;
+    padding: 5PX;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    border-radius: 10px 0px 10PX 0PX;
+    font-weight: 500;
+    margin-top: 13px;
+}
+.header-input:focus-visible{
+border: rgb(116 84 62);
+box-shadow: none;
+}
+.navbar-list .btnLogin-popup{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+.navbar-list .btnLogin-popup:hover{
+    background: #fff;
+    color: rgb(64, 36, 0);
+}
+.navbar-list{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.material-symbols-outlined{
+    margin-top: 13px;
+    display: flex;
+   justify-content: space-between;
+   margin-right: 12px;
+}
