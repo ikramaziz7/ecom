@@ -1,0 +1,82 @@
+.form-container-register{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+    padding-bottom: 60px;
+    background: #eee;
+    flex-direction:column;
+ }
+ 
+ .form-container-register form{
+    display: flex;
+    flex-direction: column;
+    padding:20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    background: #fff;
+    text-align: center;
+    width: 500px;
+ }
+ 
+ .form-container-register form h3{
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color:#333;
+ }
+ 
+ .form-container-register form input,
+ .form-container-register form select{
+    width: 100%;
+    padding:10px 15px;
+    font-size: 17px;
+    margin:8px 0;
+    background: #eee;
+    border-radius: 5px;
+    color: black;
+ }
+ 
+ .form-container-register form select option{
+    background: #fff;
+ }
+ 
+ .form-container-register form .form-btn{
+    background: #fbd0d9;
+    color:crimson;
+    text-transform: capitalize;
+    font-size: 20px;
+    cursor: pointer;
+ }
+ 
+ .form-container-register form .form-btn:hover{
+    background: crimson;
+    color:#fff;
+ }
+ 
+ .form-container-register form p{
+    margin-top: 10px;
+    font-size: 20px;
+    color:#000000;
+ }
+ 
+ .form-container-register form p a{
+    color:crimson;
+ }
+ 
+ .form-container-register form .error-msg{
+    margin:10px 0;
+    display: block;
+    background: crimson;
+    color:#fff;
+    border-radius: 5px;
+    font-size: 20px;
+    padding:10px;
+ }
+ .registre-confirmation{
+    font-weight: bold;
+    font-size: 22px;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+ }
