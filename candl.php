@@ -24,18 +24,25 @@ favorite
 </span></li>
    
        
-        <a href="login_form.php"> <button class="btnLogin-popup"> Login</button></a>
-    </ul>
+<a href="login_form.php"> <button class="btn"><?php
+session_start();
+if(isset($_SESSION["email"])){ $email=$_SESSION["email"];
+    $email=substr($email,0,strpos($email,'@'));
+    echo  $email;
+ }else{echo "Login";} ?></button></a>
+ <form action="Candl.php" method="post" style="margin-bottom: 0px; border-bottom:0px;">
+ <input type="submit" value="logOut" name="logOut" class="btn"></form>
+<?php if(isset($_POST['logOut']))
+session_destroy();    ?>
+     </ul>
+     
 </div>
 </header>
-<main>
-    <div class="main1">
+<main class="main">
         <button class="main-button"> 
             <a href="">Shop Now</a>
         </button>
-    </div>
-   
-</main>
+ </main>
  <div class="collections">
        <div>
         <div class="collec"><h3>  Christmas Collection</h3></div>
@@ -222,64 +229,3 @@ favorite
 
  </div>
   </div>
-
-
-</div>
-
-    <footer>
-        <div class="row">
-            
-            <div class="col">
-            <img src="assets/SparklyLight.png" class="logo">
-            <p>Chez SparkyLight, nous croyons en la puissance de petites actions pour créer un impact positif sur notre planète. Chaque bougie que vous allumez est une lueur d’espoir pour un avenir plus durable et plus beau.</p>
-            </div>
-
-            <div class="col">
-                <h3>Shop all <div class="underline"><span></span></div></h3>
-                <p>Sent</p>
-                <p>Collections</p>
-          
-                <p class="email-id">New in stock</p>
-                <h4>0604795764</h4>
-            </div>
-
-            <div class="col">
-                <h3>Links <div class="underline"><span></span></div></h3>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">About Us</a></li>
-                   
-                    <li><a href="#">FAQ</a></li>
-                </ul>
-            </div>
-
-            <div class="col">
-                <h3>Newsletter <div class="underline"><span></span></div></h3>
-                <form>
-                    <i class="far fa-envelope"></i>
-                    <input type="email" placeholder="Enter your email id" required>
-                    <button type="submit"><i class="fas fa-arrow-right"></i></button>
-                </form>
-
-                <div class="social-icons">
-                <a href="https://www.facebook.com/profile.php?id=61554776913524" target="_blank">
-                     <i class="fab fa-facebook-f"> </i>
-                     <a href="https://www.linkedin.com/company/100775693/admin/feed/posts/" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                    <a href="htt" target="_blank">
-                    <i class="fab fa-whatsapp"></i>
-                    <a href="https://www" target="_blank">
-                    <i class="fab fa-pinterest"></i>
-                </div>
-            </div>
-        </div>
-        <hr>
-        <p class="copyright" style="color:white"  >SparklyLight - All Rights Reserved </p>
-    </footer>
-
-
-
-
-
-<?php require_once 'includes/Footer.php'?>
